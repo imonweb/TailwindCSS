@@ -6,10 +6,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TailwindCSS</title>
 </head>
-<body>
+<body class="text-gray-600 font-body">
 
-  <h1 class="bg-red-900 text-white">Hello world</h1>
-  <script src="myBundle.js"></script>
-  
+  <div class="grid grid-cols-3">
+    <div class="col-span-1">
+      <nav>
+        <div>
+          <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+            <a href="/">Food Menu</a>
+          </h1>
+        </div>
+        <ul>
+          <li class="text-gray-700 font-bold">
+            <a href="#"><span>Home</span></a>
+          </li>
+          <li>
+          <a href="#"><span>About</span></a>
+          </li>
+          <li>
+          <a href="#"><span>Contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div> <!-- end nav -->
+
+    <main class="px-16 py-6 bg-gray-100 col-span-2">
+      <div class="flex justify-center md:justify-end">
+        <a href="#" class="text-secondary-200">Login</a>
+        <a href="#" class="text-secondary-200 ml-2">Sign up</a>
+      </div>
+
+      <header>
+        <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+        <h3 class="text-2xl font-semibold">For Customers</h3>
+      </header>
+
+      <div>
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+
+        <div class="mt-8 grid lg:grid-cols-3 gap-10">
+
+          <!-- cards go here -->
+          <div class="card">
+            <img src="images/Pork_stay.png" class="w-full h-32 sm:h-48 object-cover" alt="Green curry">
+            <div class="m-4">
+              <span class="font-bold">Spicy Pork Stay</span>
+              <span class="block tex-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <span>25 mins</span>
+            </div>
+          </div> <!-- card end-->
+
+          <!-- cards go here -->
+          <div class="card">
+            <img src="images/Green_curry.png" class="w-full h-32 sm:h-48 object-cover" alt="Green curry">
+            <div class="m-4">
+              <span class="font-bold">Green Curry</span>
+              <span class="block tex-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <span>25 mins</span>
+            </div>
+          </div> <!-- card end-->
+
+          <!-- cards go here -->
+          <div class="card">
+            <img src="images/Pad_thai.png" class="w-full h-32 sm:h-48 object-cover" alt="Green curry">
+            <div class="m-4">
+              <span class="font-bold">Pad Thai</span>
+              <span class="block tex-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <span>25 mins</span>
+            </div>
+          </div> <!-- card end-->
+
+
+        </div> <!-- mt-8 grid container -->
+
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+        <div class="mt-8">
+          <!-- cards go here -->
+        </div>
+
+        <div class="flex justify-center">
+          <div class="bg-secondary-100 text-secondary-200">Load more</div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+ 
+ 
+  <script src="myBundle.js"></script> 
 </body>
 </html>
